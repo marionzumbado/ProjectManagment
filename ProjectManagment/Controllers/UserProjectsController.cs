@@ -24,7 +24,7 @@ namespace ProjectManagment.Controllers
         public ActionResult GetProjects(int userId)
         {
             IEnumerable<UserProject> userProjects = userService.GetProjects(userId);
-            IEnumerable<ProjectModel> projects = Mapper.Map<IEnumerable<UserProject>, List<ProjectModel>>(userProjects);
+            IEnumerable<ProjectModel> projects = Mapper.Map<IEnumerable<UserProject>, IEnumerable<ProjectModel>>(userProjects);
             return Json(projects, JsonRequestBehavior.AllowGet);
         }
     }

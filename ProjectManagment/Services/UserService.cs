@@ -16,12 +16,12 @@ namespace ProjectManagment.Services
             this.userProjectRepository = userProjectRepository;
         }
 
-        public List<UserProject> GetProjects(int userId)
+        public IEnumerable<UserProject> GetProjects(int userId)
         {
             return userProjectRepository.List().Where(x => x.UserId == userId).Include(x => x.Project).ToList();
         }
 
-        public List<User> GetUsers()
+        public IEnumerable<User> GetUsers()
         {
             return userRepository.List().ToList();
         }

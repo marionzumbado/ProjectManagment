@@ -87,7 +87,6 @@ C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\bin\Antlr3.
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\obj\Debug\ProjectManagment.csprojAssemblyReference.cache
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\obj\Debug\ProjectManagment.csproj.CoreCompileInputs.cache
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\obj\Debug\ProjectManagment.csproj.CopyComplete
 C:\Users\marion\Desktop\GreenSlate\ProjectManagment\ProjectManagment\obj\Debug\ProjectManagment.dll

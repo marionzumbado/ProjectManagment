@@ -7,11 +7,9 @@ namespace ProjectManagment.Models
 {
     public class UserProject :IEntity
     {
-        [Required]
-        [Key, Column(Order = 1)]
+        [Required, Key, Column(Order = 1)]
         public int UserId { get; set; }
-        [Required]
-        [Key, Column(Order = 2)]
+        [Required, Key, Column(Order = 2)]
         public int ProjectId { get; set; }
         [Required]
         public bool IsActive { get; set; }

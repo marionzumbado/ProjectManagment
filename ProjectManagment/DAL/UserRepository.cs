@@ -5,10 +5,10 @@ namespace ProjectManagment.DAL
 {
     public class UserRepository : IRepository<User>
     {
-        private PMContext context;
+        private readonly PMContext context;
         public UserRepository()
         {
-            this.context = new PMContext();
+            context = new PMContext();
         }
 
         public IQueryable<User> List()

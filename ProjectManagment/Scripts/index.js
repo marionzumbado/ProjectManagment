@@ -1,14 +1,14 @@
 ﻿const baseUrl = 'http://localhost:50204/';
 
 function populateUsersList(users) {
-    var $dropdown = $("#userList");
+    let $dropdown = $("#usersList");
     $.each(users, function () {
         $dropdown.append($("<option />").val(this.Id).text(this.FullName));
     });
 }
 
 function populateUserProjects(projects) {
-    var $table = $("#projectList tbody");
+    let $table = $("#projectsList tbody");
     $table.empty();
     $.each(projects, function () {
         $table.append(`
@@ -27,7 +27,7 @@ function populateUserProjects(projects) {
 function getUserProjects(user) {
     let userId = user.value;
     if (userId === 0) {
-        $("table#userProjects tbody").empty();
+        $("#projectsList tbody").empty();
     } else {
         $.ajax({
             url: `${baseUrl}user/${userId}/projects`,

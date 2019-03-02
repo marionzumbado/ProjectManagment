@@ -13,7 +13,7 @@ namespace ProjectManagment.Profiles
                 .ForMember(m => m.EndDate, o => o.MapFrom(s => s.Project.EndDate.ToString("yyyy-MM-dd")))
                 .ForMember(m => m.Status, o => o.MapFrom(s => s.IsActive ? StatusConstants.Active : StatusConstants.Inactive))
                 .ForMember(m => m.Credits, o => o.MapFrom(s => s.Project.Credits))
-                .ForMember(m => m.TimeToStart, o => o.MapFrom(s => (s.Project.StartDate - s.AssignedDate).Days > 0 ? (s.Project.StartDate - s.AssignedDate).Days.ToString() : "Started"));
+                .ForMember(m => m.TimeToStart, o => o.MapFrom(s => (s.Project.StartDate - s.AssignedDate).Days >= 0 ? (s.Project.StartDate - s.AssignedDate).Days.ToString() : StatusConstants.Started));
         }
         
     }
